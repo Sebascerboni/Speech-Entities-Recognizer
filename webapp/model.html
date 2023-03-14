@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/model.css">
+    <script src="js/base.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Aplicación WEB para reconocer entidades en un texto</h2>
+      </header>
+      <nav>
+          <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="model.html"><li>Modelo</li></a>
+            <a href="about.html"><li>Información</li></a>
+          </ul>
+      </nav>
+    <section>
+        <div class="card_model">
+            <h2>Type Your text</h2>
+            <form action="/api/data" method="post">
+                <div class="box">
+                    <input type="text" name="index" required="">
+                  </div>
+                  <input class="glow-on-hover" type="submit" value="Let's make magic!">
+            </form>
+        </div>
+        
+        <div class="card_model">
+          <h4>This is the sheet that we will use for interpretation</h4>
+          <table>
+            <thead class="head">
+              <tr>
+                <th>Abbreviation</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>O</td>
+                <td>Outside of a named entity</td>
+              </tr>
+              <tr>
+                <td>B-PER</td>
+                <td>Beginning of a person’s name right after another person’s name</td>
+              </tr>
+              <tr>
+                <td>I-PER</td>
+                <td>Person’s name</td>
+              </tr>
+              <tr>
+                <td>B-ORG</td>
+                <td>Beginning of an organization right after another organisation</td>
+              </tr>
+              <tr>
+                <td>I-ORG</td>
+                <td>Organization</td>
+              </tr>
+              <tr>
+                <td>B-LOC</td>
+                <td>Beginning of a location right after another location</td>
+              </tr>
+              <tr>
+                <td>I-LOC</td>
+                <td>Location</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+    </section>
+        
+    <section>
+      <div class="card_model">
+        <table id="tabla">
+        </table>
+    </div>
+    </section>
+        
+
+    <footer>
+        <div>
+          <div><h3>Terminos y Condiciones</h3></div>
+          <div class="disclaimer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed deleniti placeat. Dolor enim placeat numquam consequuntur modi totam. Esse ea earum, porro iure nam placeat possimus inventore! Id, quo?</div>
+          <div class="disclaimer">Grupo 2 | Inteligencia Artifical y Aprendizado Automático | <a href="https://www.epn.edu.ec">Escuela Politécnica Nacional</a></div>
+        </div>
+      </footer>
+
+    <script src="js/marihuana.js"></script>
+
+    
+</body>
+</html>
